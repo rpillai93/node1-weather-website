@@ -1,4 +1,4 @@
-console.log('Client side javascript file is loaded');
+
 
 
 
@@ -22,7 +22,7 @@ console.log('Client side javascript file is loaded');
                                else{
                                   messageOne.textContent = `Location: ${data.temp.results.address}`
                                   messageTwo.textContent =  `Current Temperature is ${data.temp.tempC} Celsius and ${data.temp.condition} `
-                              
+
                                }
               })
 
