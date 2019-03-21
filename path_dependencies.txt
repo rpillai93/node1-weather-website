@@ -1,0 +1,20 @@
+WEATHER-APP        -->
+                       |    GEOCODE                    |
+.weather-app/app.js -> |.weather-app/geocode/geocode.js|
+                       |    WEATHER                    |
+                    -> |.weather-app/weather-weather.js|
+                       |                    WEB SERVER |--> |SRC                |
+                                                            |     TEMPLATES     |        -->               |VIEWS          |
+                                                            |                   |                          |       PARTIALS| -> .weather-app/web-server/templates/partials/footer.hbs
+                                                            |                   |                                            -> .weather-app/web-server/templates/partials/header.hbs
+                                                            |             PUBLIC|        -->      |         CSS                                           |
+.weather-app/web-server/src/app.js -> .weather-app/web-server/templates/views/index.hbs ->        |.weather-app/web-server/public/css/styles.css          |
+                                   -> .weather-app/web-server/templates/views/help.hbs  ->        |.weather-app/web-server/public/css/styles.css          |
+                                   -> .weather-app/web-server/templates/views/about.hbs ->        |.weather-app/web-server/public/css/styles.css          |
+                                   -> .weather-app/web-server/templates/views/404.hbs   ->        |.weather-app/web-server/public/css/styles.css          |
+                                                                                                  |             IMG                                       |
+                                                                                                  |.weather-app/web-server/public/img/image_rahul.jpg     |
+                                                                                                  |              JS                                       |
+                                                                                                  |.weather-app/web-server/public/js/app.js -> *standalone|
+
+.weather-app/app-promise.js -> *standalone*
