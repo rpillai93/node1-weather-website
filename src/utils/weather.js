@@ -15,8 +15,10 @@
                var FtempLo=body.daily.data[0].temperatureLow;
                var CtempHi=parseFloat((FtempHi-32)/1.8).toFixed(2);
                var CtempLo=parseFloat((FtempLo-32)/1.8).toFixed(2);
-
-               resolve({CtempHi,
+               var humidity = body.currently.humidity * 100;
+                console.log(JSON.stringify(body,null, 2))
+               resolve({humidity,
+                 CtempHi,
                  CtempLo,
                 condition,
                  tempC,

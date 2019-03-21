@@ -21,7 +21,7 @@
                                }
                                else{
                                   messageOne.textContent = `Location: ${data.temp.results.address}`
-                                  messageTwo.textContent =  `Current Temperature is ${data.temp.tempC} degC with a high of ${data.temp.CtempHi} degC and a low of ${data.temp.CtempLo} degC and ${data.temp.condition} `
+                                  messageTwo.textContent =  `Current Temperature is ${data.temp.tempC} degC with a high of ${data.temp.CtempHi} degC and a low of ${data.temp.CtempLo} degC. The current humidity reads ${data.temp.humidity} % and ${data.temp.condition} `
 
                                }
               })
