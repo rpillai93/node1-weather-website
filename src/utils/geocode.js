@@ -12,12 +12,12 @@ var geocodeAddress = (address) => {
     }, (error, response, body) => {
 
       if (error)
-
-        reject('The MapQuest API service is not communicating.');
+    {  reject('The MapQuest API service is not communicating.'); }
 
       else if (address.length === 0 || body === undefined || body.results.length === 0 )
        {  console.log(body.results.length)
-        reject('The location address could not be found or was vague. Please provide proper address details.'); }
+        reject('The location address could not be found or was vague. Please provide proper address details.');
+      }
       else {
         // console.log(body.results[0].providedLocation.location);
         // console.log(body.results[0].locations[0].latLng.lat);
