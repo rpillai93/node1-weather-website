@@ -16,7 +16,8 @@ var geocodeAddress = (address) => {
         reject('The MapQuest API service is not communicating.');
 
       else if (address.length === 0 || body === undefined || body.results.length === 0 )
-        reject('The location address could not be found or was vague. Please provide proper address details.');
+       {  console.log(body.results.length)
+        reject('The location address could not be found or was vague. Please provide proper address details.'); }
       else {
         // console.log(body.results[0].providedLocation.location);
         // console.log(body.results[0].locations[0].latLng.lat);
