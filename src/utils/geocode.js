@@ -7,7 +7,7 @@ var geocodeAddress = (address) => {
   return new Promise((resolve, reject) => {
     var encodedAddress = encodeURIComponent(address);
     request({
-      url: `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=${process.env.GOOGLEGEOCODE_API_KEY}`,
+      url: `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=AIzaSyBjwzZIm-zdLgAVMYC4jQr9AsWzOKc8F2Y`,
       json: true
     }, (error, response, body) => {
 
