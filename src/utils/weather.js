@@ -2,7 +2,7 @@
      var getWeather = (results) => {
        return new Promise((resolve,reject) => {
       request({
-        url: `https://api.darksky.net/forecast/fd5407c7220015001da67ea92cb695c8/${results.latitude},${results.longitude}`,
+        url: `https://api.darksky.net/forecast/${process.env.DARKSKY_API_KEY}/${results.latitude},${results.longitude}`,
         json: true
       }, (error, response, body) => {
         console.log(results);
