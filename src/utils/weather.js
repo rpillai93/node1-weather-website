@@ -1,4 +1,5 @@
      const request = require('request');
+     const dotenv=require('dotenv').config()
      var getWeather = (results) => {
        return new Promise((resolve,reject) => {
       request({
