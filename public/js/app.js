@@ -1,4 +1,4 @@
-const dotenv=require('dotenv').config()
+
 
 
 
@@ -21,8 +21,8 @@ const dotenv=require('dotenv').config()
                                }
                                else{
                                   messageOne.textContent = `Location: ${data.temp.results.address}`
-                                  messageTwo.textContent =  `Current Temperature is ${data.temp.tempC} degC with a high of ${data.temp.CtempHi} degC and a low of ${data.temp.CtempLo} degC. The current humidity reads ${data.temp.humidity}% and ${data.temp.condition} `
-
+                                  messageTwo.textContent =  `Current Temperature is ${data.temp.tempC}  \u2103 with a high of ${data.temp.CtempHi} \u2103 and a low of ${data.temp.CtempLo}\u2103. The current humidity reads ${data.temp.humidity}% and ${data.temp.condition} `
+console.log(messageTwo.textContent)
                                }
               })
 

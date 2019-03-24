@@ -17,7 +17,7 @@
                var CtempHi=parseFloat((FtempHi-32)/1.8).toFixed(2);
                var CtempLo=parseFloat((FtempLo-32)/1.8).toFixed(2);
                var humidity = body.currently.humidity * 100;
-                console.log(JSON.stringify(body,null, 2))
+                // console.log(JSON.stringify(body,null, 2))
                resolve({humidity,
                  CtempHi,
                  CtempLo,
