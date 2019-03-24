@@ -32,14 +32,14 @@ app.get('/about', (req, res) => {
   });
 })
 /******************************************************************************/
-app.get('/help', (req, res) => {
-  res.render('help', {
-    message: 'This page will help you get through.',
-    title: 'Help',
-    name: 'Rahul Pillai',
-    footTitle: 'Created by Rahul Pillai'
-  });
-})
+// app.get('/help', (req, res) => {
+//   res.render('help', {
+//     message: 'This page will help you get through.',
+//     title: 'Help',
+//     name: 'Rahul Pillai',
+//     footTitle: 'Created by Rahul Pillai'
+//   });
+// })
 /******************************************************************************/
 app.get('', (req, res) => {
   res.render('index', {
@@ -75,14 +75,14 @@ app.get('/weather', (req, res) => {
 });
 
 /******************************************************************************/
-app.get('/help/*', (req, res) => {
-  res.render('404', {
-    name: "Rahul",
-    title: "404",
-    error404: 'Help Article not found'
-  })
-
-})
+// app.get('/help/*', (req, res) => {
+//   res.render('404', {
+//     name: "Rahul",
+//     title: "404",
+//     error404: 'Help Article not found'
+//   })
+//
+// })
 /******************************************************************************/
 app.get('*', (req, res) => {
   res.render('404', {
